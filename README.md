@@ -1,4 +1,4 @@
-#Pulzo
+#Pulzo News
 
 Extension for Firefox.
 
