@@ -1,0 +1,19 @@
+{
+  "title": "Menu",
+  "name": "menu",
+  "version": "0.0.1",
+  "description": "Menu",
+  "main": "index.js",
+  "author": "Arturo Verbel",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "dependencies": {
+    "menuitem": "0.0.5"
+  }
+}
