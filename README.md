@@ -1,2 +1,7 @@
 #Pulzo
-Ultimas noticias colombia# pulzo-ext-firefox
+
+Extension for Firefox.
+
+Show the last news created by Pulzo.
+
+BETA version
