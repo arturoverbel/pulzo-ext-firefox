@@ -8,7 +8,7 @@ var { setTimeout, clearTimeout } = require("sdk/timers");
 
 var idTime = setTimeout(function() {
   	
-}, 1000
+}, 1000);
 
 
 var button = ToggleButton({
@@ -34,16 +34,40 @@ function handleChange(state){
 			position: button
 		});
 
+		
+
+		var quijote = Request({
+		  url: "https://s3-us-west-2.amazonaws.com/filesstaticpulzo/pulzo-lite/jsons/admin/latest.json",
+		  contentType: "json",
+		  onComplete: function (response) {
+		  	
+		  	json = response.json;
+
+		  }
+		});
+
+		quijote.get();
+
+		/*
+		var myRequest = new Request('https://s3-us-west-2.amazonaws.com/filesstaticpulzo/pulzo-lite/jsons/admin/latest.json');
+
+		fetch(myRequest).then(function(response) {
+		  	
+		  	response.json().then(function(json) {
+		  		console.log(json);
+		  	});
+
+		});
+		
+
+		
 		Request({
-			  url: "https://api.twitter.com/1.1/application/rate_limit_status.json",
+			  url: "https://s3-us-west-2.amazonaws.com/filesstaticpulzo/pulzo-lite/jsons/admin/latest.json",
 			  onComplete: function (response) {
-			    if (response.json.remaining_hits) {
-			      latestTweetRequest.get();
-			    } else {
-			      console.log("You have been rate limited!");
-			    }
+			    console.log(response.body);
 			  }
 		}).get();
+		*/
 		
 	}
 
